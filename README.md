@@ -21,7 +21,7 @@ This project simulates a **workplace organization network** in Cisco Packet Trac
 | **Voice VLAN** | Isolates IP phone traffic for VoIP integration. | Set up VLAN 110 for all IP phones with dedicated access ports on switches. |
 | **DHCP Configuration** | Assigns IP addresses dynamically to devices. | Configured DHCP pools on a server in VLAN 99 with `ip helper-address` on VLAN interfaces. |
 | **DMZ** | Hosts a public-facing web server with isolation. | Created a DMZ (172.16.100.0/24) with Server_Web, accessible via NAT on Router0. |
-| **Wireless Guest Network** | Provides secure wireless access for guests. | Set up VLAN 50 with AccessPoint0, using WPA2-PSK security (passphrase: GuestPass123). |
+| **Wireless Guest Network** | Provides secure wireless access for guests. | Set up VLAN 50 with AccessPoint0, using WPA2-PSK security (passphrase: P@ssw0rd1234). |
 | **Port Security** | Enhances security by limiting device access. | Applied `port-security` on access ports by administratively shutting down extra ports. |
 | **Inter-VLAN Routing** | Enables communication between VLANs. | Configured a multilayer switch with VLAN interfaces and routing enabled. |
 | **Trunking** | Carries multiple VLAN traffic between switches. | Set up trunk ports on Switch0, Switch1, Switch2, Switch4, and Switch5 with `switchport mode trunk`. |
